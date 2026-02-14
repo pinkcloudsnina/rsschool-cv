@@ -242,12 +242,6 @@ p {
     margin-right: 0.6rem;
 }
 
-.about,
-.skills,
-.education,
-.courses {
-}
-
 .skill__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
