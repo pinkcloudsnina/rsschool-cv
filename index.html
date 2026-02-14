@@ -4,11 +4,200 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
+    <div class="top_bg"></div>
+    <div class="container">
 
+      <header class="header">
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            <li class="nav__item"><a href="#courses" class="nav__link">Courses</a></li>
+            <li class="nav__item"><a href="#employment" class="nav__link">Employment</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          </ul>
+        </nav>
+
+        <div class="avatar">
+          <img src="./img/photo.jpeg" alt="Nina Korocevič photo">
+        </div>
+        <section class="contacts">
+          <div class="title">
+            <h4>Frontend-Developer</h4>
+            <h1>Nina Korocevič</h1>
+          </div>
+
+          <ul class="contact__list">
+            <li class="contact__item"><span class="contact__icon icon--email"></span>nina.korotsevich@gm***.com</li>
+            <li class="contact__item"><span class="contact__icon icon--location"></span>Vilnius, Lithuania
+            </li>
+            <li class="contact__item"><span class="contact__icon icon--phone"></span>+370 (646) 097**</li>
+            <li class="contact__item"><span class="contact__icon icon--discord"></span>Nina (@pinkcloudsnina)</li>
+          </ul>
+        </section>
+        <ul class="lang__list">
+          <li class="lang__item"><span class="lang__level">Native</span>Russian</li>
+          <li class="lang__item"><span class="lang__level">B2/C1</span>English</li>
+          <li class="lang__item"><span class="lang__level">B2/C1</span>Lithuanian</li>
+          <li class="lang__item"><span class="lang__level">B1</span>Chinese</li>
+        </ul>
+
+      </header>
+
+      <main class="main">
+
+        <section class="about" id="about">
+          <h2>About</h2>
+          <p>Entry-Level Front-End Developer with a technical education and hands-on training in web development.
+            Previously contributed to several commercial website projects. Strong interest in the intersection of
+            front-end development and web design. Reliable, detail-oriented, and eager to learn modern technologies.</p>
+        </section>
+        <section class="skills" id="skills">
+          <h2>Skills</h2>
+          <ul class="skill__list">
+            <li class="skill__item">HTML</li>
+            <li class="skill__item">CSS</li>
+            <li class="skill__item">JS</li>
+            <li class="skill__item">Sass</li>
+            <li class="skill__item">React</li>
+            <li class="skill__item">Figma</li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2>Education</h2>
+          <div class="education__list">
+            <div class="education__year">2006 - 2011</div>
+            <div>
+              <h3 class="education__place">Belarusian State University of Informatics and Radioelectronics (BSUIR)</h3>
+              <p class="education__description">Faculty of Engineering and Economics, Bachelor’s degree in Information
+                Systems and Technologies in Economics.</p>
+            </div>
+
+            <div class="education__year">2013 - 2016</div>
+            <div>
+              <h3 class="education__place">Shenzhen Polytechnic</h3>
+              <p class="education__description">Chinese as a foreign language. HSK Level 5 Certificate.</p>
+            </div>
+          </div>
+        </section>
+        <section class="courses" id="courses">
+          <h2>Courses</h2>
+          <div class="courses__list">
+            <div class="courses__provider">Udemy</div>
+            <p class="education__name">The Complete JavaScript Course 2023: From Zero to Expert</p>
+            <div class="courses__provider">Udemy</div>
+            <p class="education__name">Advanced CSS and Sass:
+              Flexbox, Grid, Animations and More</p>
+            <div class="courses__provider">Udemy</div>
+            <p class="education__name">React - Full React course</p>
+            <div class="courses__provider">RS School</div>
+            <p class="education__name">RS LT FALL 2022 (JAVASCRIPT)</p>
+
+          </div>
+        </section>
+        <section class="employment" id="employment">
+          <h2>Employment</h2>
+          <div class="employment__list">
+            <div class="employment__year">2016 - 2017</div>
+            <div>
+              <h3 class="employment__company">DealExtreme (dx.com)</h3>
+              <p class="employment__description">Regional Marketing Specialist. Worked in an international marketing
+                team
+                supporting multiple European countries and regions. Developed creative content concepts for digital
+                platforms and website campaigns. Coordinated freelancers and designers: task setting, feedback, and
+                delivery control. Collaborated with cross-functional teams on large-scale website events and campaigns
+              </p>
+            </div>
+            <div class="employment__place">Shenzhen, China</div>
+
+            <div class="employment__year">2017 - 2021</div>
+            <div>
+              <h3 class="employment__company">Online exchange service</h3>
+              <p class="employment__description">Customer service operator, online consulting of clients (EN/RU/CN).
+                Worked as part of an operations support team, handling routine data processing tasks. Entered, updated,
+                and verified information in internal databases.</p>
+            </div>
+            <div class="employment__place">Minsk, Belarus</div>
+
+            <div class="employment__year">2023 - 2025</div>
+            <div>
+              <h3 class="employment__company">Multihub, BetBoom</h3>
+              <p class="employment__description">Worked with internal databases: data organization, verification, and
+                quality control. Performed contract review and document verification for external contractors and
+                business
+                partners.</p>
+            </div>
+            <div class="employment__place">Freelance</div>
+
+
+          </div>
+        </section>
+        <section class="code">
+          <h2>Code example</h2>
+          <div class="code__container">
+            <pre class="code__content">
+<code>
+function duplicateEncode(word){
+  const wordLower = word.toLowerCase();
+  const letterMatch = {};
+  for (let letter of wordLower) {
+    letterMatch[letter] = Object.hasOwn(letterMatch, letter)? letterMatch[letter]+1 : 1;
+  }
+  
+  return [...wordLower].map(letter => letterMatch[letter]>1? ')' : '(').join('');
+}
+</code>
+</pre>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <div class="projects__container">
+            <a class="projects__item" href="https://pinkcloudsnina.github.io/rsschool-cv/" target="_blank">
+              <img src="./img/project-1.jpg" alt="cv project page screenshot">
+              <div class="projects__banner">
+                CV page
+              </div>
+            </a>
+
+            <a class="projects__item" href="https://fc-logistics.ru/" target="_blank">
+              <img src="./img/project-2.jpg" alt="logistics page screenshot">
+              <div class="projects__banner">
+                Website for logistic company
+              </div>
+            </a>
+
+            <a class="projects__item" href="https://pinkcloudsnina.github.io/sudoku/" target="_blank">
+              <img src="./img/project-3.jpg" alt="sudoku game project screenshot">
+              <div class="projects__banner">
+                Sudoku game
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+
+        <div class="footer__year">2026</div>
+        <a class="footer__github" href="https://github.com/pinkcloudsnina" target="_blank">pinkcloudsnina</a>
+        <a class="footer__rs" href="https://rs.school/courses/short-track" target="_blank">rs.school</a>
+
+      </footer>
+    </div>
+    <div class="bottom_bg">
+      <div class="bottom_bg--dark"></div>
+      <div class="bottom_bg--light"></div>
+    </div>
   </body>
 
 </html>
