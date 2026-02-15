@@ -133,11 +133,10 @@ p {
 
 .header {
     grid-template-rows: 4rem auto;
-    grid-area: 1/1/2/4;
 }
 
 .nav {
-    grid-column: span 3;
+    grid-area: 1/1/2/4;
     background-color: var(--bg-dark-color);
 }
 
