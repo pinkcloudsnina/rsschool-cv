@@ -185,10 +185,20 @@ p {
     grid-area: 3/2/4/3;
 }
 
-.contact__item {
+.contact__item,
+.contact__item a {
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
+}
+
+.contact__item a {
+    text-decoration: none;
+    color: var(--text-main-color);
+}
+
+.contact__item a:hover {
+    color: var(--sub-color);
 }
 
 .contact__item:last-child {
