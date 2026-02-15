@@ -365,7 +365,6 @@ code {
 }
 
 .footer {
-    background-color: var(--bg-dark-color);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: #fff;
@@ -385,8 +384,6 @@ code {
 
 .footer__rs {
     grid-column: span 2;
-    background-color: var(--bg-lightgrey);
-    place-self: stretch stretch;
     color: var(--text-main-color);
 }
 
@@ -409,6 +406,7 @@ code {
 
 .footer__github::before {
     background-image: url(./img/github-logo.svg);
+    background-size: cover;
 }
 
 .footer__rs::before {
@@ -479,6 +477,7 @@ code {
         width: 100%;
         padding: 0 2rem 0;
     }
+
     .header {
         grid-template-rows: 6rem auto;
     }
@@ -489,6 +488,10 @@ code {
     .nav__list {
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .main {
+        gap: 3rem 0;
     }
     .about,
     .skills {
@@ -504,5 +507,24 @@ code {
     .projects__item {
         width: 20rem;
         justify-self: center;
+    }
+    .footer {
+        gap: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        grid-template-rows: 3.5rem 3.5rem 7rem;
+    }
+    .footer__year {
+        grid-column: span 2;
+    }
+    .footer__github {
+        grid-column: span 2;
+    }
+    .footer__github::before {
+        width: 2rem;
+        height: 2rem;
     }
 }
